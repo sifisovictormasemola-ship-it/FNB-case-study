@@ -2,7 +2,7 @@ FNB Case study - has five folders (Case study data, Brainstorm and Planning, Dat
 
 Case study data - has raw data which contain files provided by the client (PDF and Excel).
 
-Brainstorming and analyses - Data driven questions were asked on how to analyse the data, I implemented the following tools (Miro, Databricks (SQL and Agent), Data studio, Excel, PowerBI, Lovable and Power point.
+Brainstorming and analyses - Data driven questions were asked on how to analyse the data, I implemented the following tools Miro, Databricks (SQL and Agent), Data studio, Excel, PowerBI, Lovable and Power point.
 
 Data processing - Databricks was the tool used to explore data in SQL to summarise the data.
 
