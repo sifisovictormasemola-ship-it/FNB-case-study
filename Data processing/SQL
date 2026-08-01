@@ -1,1 +1,24 @@
-
+SELECT
+  YEAR(`Date`) AS `Year`,
+  ROUND(
+    (
+      COUNT(
+        CASE
+          WHEN (`Sales` - `Cost Of Sales`) > 0 THEN 1
+        END
+      )
+        / COUNT(*)
+    )
+      * 100,
+    2
+  ) AS `Pct_Profitable_Days`,
+  ROUND((SUM(`Sales` - `Cost Of Sales`) / SUM(`Sales`)) * 100, 2) AS `Overall_Margin_Pct`
+FROM
+  `brightlearn`.`default`.`fnb_sales_case_study_2021_1`
+WHERE
+  `Quantity Sold` > 0
+GROUP BY
+  YEAR(`Date`)
+ORDER BY
+  `Year`
+brightlearn.default.fnb_sales_case_study_2021_1
